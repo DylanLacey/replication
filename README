@@ -1,0 +1,16 @@
+# Description
+A replication case for issues taking Screenshots during iPad (and only iPad) tests.
+
+# Prerequisites
+* A sane Ruby 2.x environment
+* The `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` environment variables set
+* `bundler` installed (with `gem install bundler`)
+
+# Replicating
+1. Clone this repo
+2. CD into clone directory
+3. `bundle install`
+4. `bundle exec ruby repro.rb` to run against the iPhone
+5. `DEVICE=iPad bundle exec ruby repro.rb` to run against the iPad (which fails)
+
+The test will spin up, announce it's running and begin processing commands.
